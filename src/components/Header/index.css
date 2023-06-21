@@ -1,0 +1,66 @@
+.bg-header {
+    background-image: url('https://images.pexels.com/photos/1644992/pexels-photo-1644992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttom-arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    animation: arrow 1s infinite reverse;
+    -moz-animation: arrow 1s infinite reverse;
+    -webkit-animation: arrow 1s infinite reverse;
+    position: relative;
+    top: 0px;
+  }
+  
+  @keyframes arrow {
+    from {
+        top: -5px;
+    }
+    to {
+      top: 0;
+    }
+  }
+  
+  @-moz-keyframes arrow {
+    from {
+        top: -5px;
+    }
+    to {
+      top: 0;
+    }
+  }
+  
+  @-webkit-keyframes arrow {
+    from {
+        top: -5px;
+    }
+    to {
+      top: 0;
+    }
+  }
+  
+  .buttom-arrow {
+    color: white;
+    transform: rotate(90deg);
+    height: 28px;
+    width: 28px;
+  }
+  
+  .buttom-arrow-position {
+    position: relative;
+    top: -12px;
+  }
+  
+  @media screen and (max-width: 390px) {
+    .bg-header {
+      background-position: center;
+    }
+  }
